@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Map</title>
+</head>
+<body>
+    <center>
+        <h2>Map View</h2>    
+    </center>
+    <div id="map" style="width: 800px;height: 600px;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8e203bf4c5ec9b67c9fcd71f2b9817b5"></script>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(37.5658, 126.9386),
+            level: 4
+        
+        }
+
+        var map = new kakao.maps.Map(container, options);
+    </script>
+    
+</body>
+</html>
+
+
+# $ python -m venv myvenv
+  $ source myvenv/Scripts/activate #
